@@ -1,0 +1,52 @@
+#authenticator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3150a3, rgb(142, 182, 207));
+    padding: 16px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+#authenticator-content {
+    max-width: 32em;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(14, 5, 94, 0.5); 
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.action {
+    justify-content: center;
+}
+
+button {
+    margin: .5em;
+}
+
+input {
+    width: 100%;
+    padding: 1em;
+    margin: .5em 0;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgba(7, 26, 109, 0.3);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #0a38ce; 
+  box-shadow: 0 0 5px rgba(23, 4, 90, 0.5); 
+}
+
+

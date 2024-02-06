@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<app-sidebar></app-sidebar>
+
+<div id="post-feed">
+    <app-post *ngFor="let post of posts" [postData]="post"></app-post>
+</div>
+<button (click)="onCreatePostClick()"
+mat-fab color="primary" id="post-button"><mat-icon>add</mat-icon>
+</button>
+<button (click)="onExitConfirmclick()" mat-fab color="primary" id="exit-button">>
+    <mat-icon>exit_to_app</mat-icon>
+</button>
+

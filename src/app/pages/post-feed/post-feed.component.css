@@ -1,0 +1,40 @@
+#post-button {
+    position: fixed;
+    bottom: 7em;
+    right: 2em;
+}
+
+#exit-button {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
+#post-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 700px;
+    margin: 5em auto 2em auto;
+    padding: 20px;
+    background-color: rgb(221, 239, 245);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.app-post-container {
+    flex: 1;
+    min-width: 0;
+    background-color: #e0e0e0; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.app-post-container img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+}
+

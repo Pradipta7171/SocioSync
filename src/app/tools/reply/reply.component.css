@@ -1,0 +1,77 @@
+p {
+    text-align:center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#reply-box {
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    min-width: 400px;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 0 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+#reply-action-bar {
+    width:100%;
+    display: grid;
+    grid-template-columns: 3em 1fr;
+    margin-top: 1em; 
+    direction: rtl;
+    border-radius: 5px;
+}
+
+#reply-action-bar button {
+    background-color: rgb(16, 8, 82);
+    color: rgb(237, 236, 243);
+    border-radius: 5px; 
+
+}
+
+.mat-icon {
+ display: flex;
+ align-items: center;
+}
+
+#reply-action-bar input {
+    padding: 1em 2em 1em 1em;
+    border: 1px solid gray;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    direction: ltr;
+    border-radius: 5px;
+}
+
+.comment-container {
+    display: flex;
+}
+
+.comment-name {
+    font-size: 1em;
+}
+
+.comment {
+    border-radius: 1em;
+    background-color: gainsboro;
+    padding: 1em;
+}
+
+.creator-comment-container {
+    justify-content: flex-end;
+    text-align: end;
+    
+}
+
+.creator-comment {
+    background-color: rgb(53, 92, 165);
+    color: white;
+}

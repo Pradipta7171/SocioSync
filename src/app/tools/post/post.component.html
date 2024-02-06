@@ -1,0 +1,32 @@
+<mat-card class="post-container">
+    <mat-card-header>
+        <mat-card-title class="name">{{creatorName}}</mat-card-title>
+        <mat-card-subtitle class="desc">~ {{creatorDescription}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="post-image" src="{{postData?.imageUrl}}">
+    <mat-card-content class="comment">
+        {{creatorName}}: {{postData?.comment}}
+    </mat-card-content>
+    <mat-card-actions class="custom-card-actions">
+        <div class="left-buttons">
+            <button mat-icon-button (click)="onReplyClick()" class="action-item" color="primary">
+                <mat-icon>quickreply</mat-icon>
+            </button>
+            <button mat-icon-button [@likeAnimation]="likeState" (click)="onLikeClick()" class="action-item like">
+                <mat-icon>{{ likeState === 'liked' ? 'favorite' : 'favorite_border' }}</mat-icon>
+            </button>
+            <button mat-icon-button class="action-item" color="accent" (click)="onSaveToDesktop()">
+                <mat-icon>save_as</mat-icon>
+            </button>
+        </div>
+        <div class="right-buttons">
+            <button mat-icon-button [@bookmarkAnimation]="bookmarkState" (click)="onBookmarkClick()" class="action-add save" color="accent">
+                <mat-icon>{{ bookmarkState === 'bookmarked' ? 'bookmark' : 'bookmark_add' }}</mat-icon>
+            </button>
+            <button mat-icon-button class="action-add edit">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+        </div>
+    </mat-card-actions>
+</mat-card>
+

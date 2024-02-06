@@ -1,0 +1,58 @@
+.name {
+    font-size: 1.3em; 
+    color: rgb(3, 3, 43); 
+    font-weight: bold;
+}
+  
+.desc {
+    font-size: 1.1em; 
+    color: rgb(10, 10, 94); 
+
+}
+
+.post-image {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 650px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-image:hover {
+    transform: scale(1.1);
+}
+
+.comment {
+    font-size: 1.2em;
+    color: rgb(2, 2, 20);
+}
+
+.custom-card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-buttons, .right-buttons {
+    display: flex;
+}
+
+.action-add {
+    margin-left: auto; 
+}
+
+.like mat-icon {
+    color: #d62323;
+}
+
+.save mat-icon {
+    color: #c20c49;
+}
+
+.edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

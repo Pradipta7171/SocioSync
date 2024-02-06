@@ -1,0 +1,83 @@
+mat-card {
+    border: 2px solid #010f18;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(to right, #bbd2e9, rgb(229, 236, 241));
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+mat-card-title {
+    font-size: 2em; 
+    font-weight: bold; 
+    color: rgb(4, 40, 56); 
+    margin-bottom: 0.5em; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    font-size: 1em;
+    padding: 1em;
+    resize: none;
+    width: calc(100%);
+    max-width: 500px;
+    min-height: 150px;
+    border: none;
+    outline: none;
+    margin-bottom: 1em;
+    background-color: rgb(241, 248, 253); 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#photo-upload {
+    display: none;
+}
+
+#post-preview {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#post-preview-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 150px;
+    height: 100px;
+    border-radius: 1em;
+    border: 1px dashed rgb(4, 4, 49);
+    margin-top: 1em;
+}
+
+label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+button[color="primary"] {
+    background-color: #048a3c;
+    color: #fff;
+    margin-top: 1em;
+    width: 50px; 
+    border-radius: 5px;
+}
+
+button[mat-button] {
+    background-color: rgb(8, 59, 94); 
+    color: #fff; 
+    width: 50px; 
+    align-self: flex-end; 
+    margin-top: 1em; 
+}

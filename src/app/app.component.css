@@ -1,0 +1,88 @@
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    z-index: 5;
+}
+
+#nav-bar-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+#nav-bar-left, #nav-bar-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: white;
+}
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #8bb0da; 
+    }
+    50% {
+      text-shadow: 0 0 20px #b5c4d6, 0 0 30px #89b9f0; 
+    }
+    100% {
+      text-shadow: 0 0 5px #a9c8ec; 
+    }
+}
+
+.glow-effect {
+    animation: glow 3s infinite;
+    color: #e0eaf7; 
+}
+
+#nav-bar-left {
+    justify-content: flex-start;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 60px; 
+    height: 60px;
+    margin-right: 2px; 
+    animation: glow 3s infinite;
+    vertical-align: top;
+}
+
+
+#nav-bar-right {
+    justify-content: flex-end;
+    font-size: 1.6em;
+}
+
+.nav-bar-items {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 1em;
+}
+
+.welcome-message {
+    display: none; 
+    position: absolute;
+    top: 15px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8em; 
+    color: whitesmoke; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.glow-effect:hover .welcome-message {
+    display: block; 
+}
